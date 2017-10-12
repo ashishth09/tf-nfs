@@ -7,6 +7,9 @@ resource "ibm_storage_file" "nfs_manager" {
     notes = "${var.name} swarm manager volume"
 }
 
+variable datacenter {
+    default = ""
+}
 
 variable name {
     default = "d4ic"
