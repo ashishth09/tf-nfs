@@ -1,6 +1,6 @@
 resource "ibm_storage_file" "nfs_manager" {
     capacity   = 20
-    datacenter = "${module.nfs.datacenter}"
+    datacenter = "${var.datacenter}"
     iops       = 100
     type       = "Performance"
     hourly_billing = true
